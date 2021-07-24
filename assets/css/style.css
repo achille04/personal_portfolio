@@ -1,8 +1,8 @@
 
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*==============================================================
+                        #Common_Css
+================================================================*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -21,7 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* ============= Header_Section_Starts =============== */
+
+/* =================================== 
+          Header_Section_Starts
+  =================================== */
 #header{
   position: fixed;
   top: 0;
@@ -84,7 +87,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
   }
 }
-/* ============= Navigation_Menu_Starts =============== */
+
+/* =================================== 
+      Navigation_Menu_Starts
+  =================================== */
+
+
 .nav-menu{
   padding-top: 30px;
 }
@@ -122,7 +130,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li:hover > a i {
   color: #149ddd;
 }
-/* ============= Mobile_Navigation_Menu_Starts =============== */
+
+
+
+/* =================================== 
+      Mobile_Navigation_Menu_Starts
+  =================================== */
+
+
+
+
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -149,12 +166,148 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-/* ============= Mobile_Navigation_Menu_Ends =============== */
 
-/* ============= Header_Section_Ends =============== */
+/* =================================== 
+      Mobile_Navigation_Menu_Ends
+  =================================== */
 
 
 
+/* =================================== 
+      Header_Section_Ends
+  =================================== */
+
+
+
+
+
+
+/* =================================== 
+      Hero_Section_Starts 
+  =================================== */
+
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/hero_bg.jpg");
+    background-size: cover;
+  }
+
+  /*======== Before ============*/
+
+
+  #hero::before{
+    content: "";
+    background: rgba(5,13,24,0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+  }
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  #hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 34px;
+    font-family: "Poppins",sans-serif;
+  }
+  #hero p span{
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+  }
+
+    /*======== Responsive ============*/
+  @media (min-width:1024px) {
+    #hero{
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width:768px) {
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #hero h2{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  /* =================================== 
+      Hero_Section_Ends 
+  =================================== */
+
+          /* New_Section */
+
+ /* =================================== 
+      About_Section_Starts 
+  =================================== */
+  .about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+  }
+  .about .content ul{
+    list-style: none;
+    padding: 0;
+  }
+  .about .content ul li {
+    padding-bottom: 10px;
+  }
+  .about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #149ddd;
+  }
+  .about .content p:last-child{
+    margin-bottom: 0;
+  }
+  .about h2{
+    margin-top: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* =================================== 
+      About_Section_Ends 
+  =================================== */
 
 
 
